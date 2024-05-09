@@ -1,0 +1,19 @@
+# print(labels, "detected")
+                original_list = labels
+                separate_list = []
+
+                for element in original_list:
+                    parts = element.split(' ')  # Split the element by the '-' character
+                    first_part = parts[0]  # Get the first part
+
+                    separate_list.append(first_part)  # Add the first part to the separate list
+
+                print(separate_list)
+                if 'shoe' not in separate_list:
+                    print("wear shoe")
+                if 'gloves' not in separate_list:
+                    print("wear gloves")
+                if 'jacket' not in separate_list:
+                    print("wear jacket")
+                if 'helmet' not in separate_list:
+                    print("wear helmet")
